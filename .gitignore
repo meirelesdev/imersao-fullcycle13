@@ -1,0 +1,6 @@
+test-kafka.json
+./home-broker-backend/node_modules
+./home-broker-backend/dist
+./home-broker-frontend/node_modules
+./home-broker-frontend/dist
+./home-broker-frontend/.next

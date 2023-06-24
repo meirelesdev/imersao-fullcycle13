@@ -1,0 +1,117 @@
+{
+  "wallet-assets": [
+    {
+      "asset_id": "asset1",
+      "wallet_id": "wallet1",
+      "shares": "1000",
+      "created_at": "2018-01-01T00:00:00Z",
+      "updated_at": "2018-01-01T00:00:00Z",
+      "Asset": {
+        "id": "asset1",
+        "symbol": "asset1",
+        "price": "100"
+      }
+    },
+    {
+      "asset_id": "asset1",
+      "wallet_id": "wallet1",
+      "shares": "5000",
+      "created_at": "2018-01-01T00:00:00Z",
+      "updated_at": "2018-01-01T00:00:00Z",
+      "Asset": {
+        "id": "asset2",
+        "symbol": "asset2",
+        "price": "200"
+      }
+    }
+  ],
+  "orders": [
+    {
+      "id": "order1",
+      "wallet_id": "wallet1",
+      "asset_id": "asset1",
+      "shares": "5000",
+      "price": 100,
+      "type": "BUY",
+      "status": "OPEN",
+      "created_at": "2018-01-01T00:00:00Z",
+      "updated_at": "2018-01-01T00:00:00Z",
+      "Asset": {
+        "id": "asset1",
+        "symbol": "asset1",
+        "price": "100"
+      }
+    },
+    {
+      "id": "order2",
+      "wallet_id": "wallet1",
+      "asset_id": "asset1",
+      "shares": "500",
+      "price": 100,
+      "type": "SELL",
+      "status": "OPEN",
+      "created_at": "2018-01-01T00:00:00Z",
+      "updated_at": "2018-01-01T00:00:00Z",
+      "Asset": {
+        "id": "asset1",
+        "symbol": "asset1",
+        "price": "100"
+      }
+    },
+    {
+      "id": "order3",
+      "wallet_id": "wallet1",
+      "asset_id": "asset1",
+      "shares": "500",
+      "price": 100,
+      "type": "SELL",
+      "status": "OPEN",
+      "created_at": "2018-01-01T00:00:00Z",
+      "updated_at": "2018-01-01T00:00:00Z",
+      "Asset": {
+        "id": "asset1",
+        "symbol": "asset1",
+        "price": "100"
+      }
+    },
+    {
+      "shares": "4",
+      "price": "5",
+      "asset_id": "asset1",
+      "type": "BUY",
+      "status": "OPEN",
+      "Asset": {
+        "id": "asset1",
+        "Symbol": "PETR4",
+        "price": 30
+      },
+      "id": "i-M2ECw"
+    },
+    {
+      "shares": "412",
+      "price": "55",
+      "asset_id": "asset1",
+      "type": "BUY",
+      "status": "OPEN",
+      "Asset": {
+        "id": "asset1",
+        "Symbol": "PETR4",
+        "price": 30
+      },
+      "id": "6Cv4QKT"
+    },
+    {
+      "shares": "4123",
+      "price": "5514",
+      "asset_id": "asset1",
+      "type": "BUY",
+      "status": "OPEN",
+      "Asset": {
+        "id": "asset1",
+        "Symbol": "PETR4",
+        "price": 30
+      },
+      "id": "jvdMkVU"
+    }
+  ]
+}

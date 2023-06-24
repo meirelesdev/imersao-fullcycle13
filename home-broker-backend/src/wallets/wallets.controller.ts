@@ -1,0 +1,18 @@
+import { Body, Controller, Get, Post } from "@nestjs/common";
+import { WalletsService } from "./wallets.service";
+
+@Controller("wallets")
+export class WalletsController {
+  // eslint-disable-next-line prettier/prettier
+  constructor(private readonly walletsService: WalletsService) { }
+
+  @Get()
+  all() {
+    return this.walletsService.all();
+  }
+
+  @Post()
+  create(@Body() body: { id: string }) {
+    return this.walletsService.create(body);
+  }
+}

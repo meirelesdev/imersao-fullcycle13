@@ -35,5 +35,43 @@ services:
 
   bolsa:
     build: ./bolsa/.
+    container_name: bolsa
+    command: go run cmd/trade/main.go
     volumes:
         - ./bolsa/:/go/src/
+
+  app:
+    build: ./home-broker-backend/.
+    container_name: app
+    command: npm run start:dev
+    hostname: home_broker_backend
+    ports:
+      - 3000:3000
+      - 5555:5555
+    depends_on:
+      - kafka
+    volumes:
+        - ./home-broker-backend/:/home/node/app
+  
+  frontend:
+    build: ./home-broker-frontend/.
+    container_name: frontend
+    hostname: home_broker_frontedn
+    ports:
+      - 3001:3000
+    volumes:
+        - ./home-broker-frontend/:/home/node/app
+
+  db:
+    image: bitnami/mongodb:5.0.17
+    volumes:
+      - mongodb_data:/bitname/mongodb
+    environment:
+      MONGODB_ROOT_PASSWORD: root
+      MONGODB_REPLICA_SET_MODE: primary
+      MONGODB_REPLICA_SET_KEY: 123456
+      MONGODB_DATABASE: nest
+
+volumes:
+  mongodb_data:
+    driver: local
